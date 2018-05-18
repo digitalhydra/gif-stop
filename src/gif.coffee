@@ -55,7 +55,7 @@ module.exports = class Gif
         canvasImage.onload = checkIsLoaded
         canvasImage.onerror = onErrorLoading
 
-        canvasImage.src = @animatedSource
+        canvasImage.src = this.animatedSource
 
     play: (force=false) =>
         return unless @isStopped or force
